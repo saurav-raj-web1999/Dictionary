@@ -1,0 +1,179 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover ;
+
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(193, 85, 3, 0.493);
+    /* background: linear-gradient(rgb(158, 2, 255),rgb(255, 0, 247)); */
+}
+
+.box{
+    width: 43rem;
+    padding: 3rem;
+    border-radius: .5rem;
+    background: #fff;
+}
+
+.box .heading{
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.demoHeading{
+    font-size: 1.7rem;
+    color: #414040;
+}
+
+
+
+.box .search{
+    position: relative;
+    margin: 3rem 0 2.8rem;
+}
+
+.box .search input{
+    width: 100%;
+    height: 5rem;
+    font-size: 1.8rem;
+    padding: 1rem 3.3rem;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid #989898;
+    color: #414040;
+}
+
+.box .search input:focus{
+    border: 1px solid blue;
+}
+
+.box .search input::placeholder{
+    color: #989898;
+    font-size: 1.7rem;
+}
+
+.box .search :where(i, span){
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.box .search i{
+    font-size: 1.7rem;
+    left: 2.5%;
+    color: #989898;
+}
+.box .search span{
+    font-size: 2.2rem;
+    right: 2.5%;
+    color: #989898;
+    cursor: pointer;
+}
+.box ul li{
+    list-style: none;
+    margin-bottom: 3rem;
+}
+
+ul{
+    display: none;
+}
+
+/* adding class by javaScript  */
+.active{
+    display: block;
+}
+
+
+ul .word{
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+ul .word .details p{
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: .6rem;
+}
+
+ul .word .details span{
+    font-size: 2rem;
+    color: #989898;
+}
+
+
+ul .word i{
+    position: absolute;
+    font-size: 2rem;
+    color: rgb(73, 73, 73);
+    top: 15px;
+    right: 0;
+    cursor: pointer;
+}
+
+.content li{
+    min-height: 6rem;
+    border-bottom: 2px solid #989898;
+
+}
+
+.content li .details{
+    border-left: 3px solid blue;
+    padding-left: 2rem;
+    margin-bottom: 2rem;
+}
+
+.content p,span{
+    margin-bottom: .2rem;
+}
+
+.content .details span{
+    font-size: 1.6rem;
+}
+
+.content li .details p{
+    font-size: 1.9rem;
+    font-weight: 700;
+}
+
+.content li:last-child{
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+
+@media (max-width: 670px){
+    html{
+        font-size: 52%;
+    }
+}
+@media (max-width: 460px){
+    html{
+        font-size: 43%;
+    }
+}
+@media (max-width: 320px){
+    html{
+        font-size: 30%;
+    }
+}
